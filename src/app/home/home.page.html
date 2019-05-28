@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">
+      Isaac Hudis
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-avatar class="avatar">
+      <img src="https://i.boring.host/15Z77RiR.png">
+    </ion-avatar>
+    <p style="text-align: center">CS student at Tufts University.</p>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Firstname</ion-label>
+      Isaac
+    </ion-item>
+    <ion-item>
+      <ion-label>Lastname</ion-label>
+      Hudis
+    </ion-item>
+    <ion-item>
+      <ion-label>Github username</ion-label>
+      isaach1
+    </ion-item>
+    <ion-item>
+      <ion-label>Birthdate</ion-label>
+      <ion-datetime 
+        disabled
+        displayFormat="MM/DD/YYYY" 
+        [(ngModel)]="Date"
+      ></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hometown</ion-label>
+      London
+    </ion-item>
+    <ion-item>
+      <ion-label>Nationalities</ion-label> 
+      British, Japanese, American
+    </ion-item>
+    <ion-item>
+      <ion-label>Favourite Food</ion-label>
+      Sausage, Pepperoni and Olive Pizza
+    </ion-item>
+  </ion-list>
+
+  <div>
+    <h2 style="text-align: center">Interests, Hobbies and Skills</h2>
+    <ion-chip color="secondary">
+      <ion-icon name="code"></ion-icon>
+      <ion-label>C++</ion-label>
+    </ion-chip> 
+    <ion-chip color="dark">
+      <ion-icon name="flame"></ion-icon>
+      <ion-label>Climbing and Mountaineering</ion-label>
+    </ion-chip>
+    <ion-chip color="primary">
+      <ion-icon name="logo-game-controller-a"></ion-icon>
+      <ion-label>Online Gaming</ion-label>
+    </ion-chip>
+    <ion-chip color="danger">
+      <ion-icon name="alarm"></ion-icon>
+      <ion-label>Waking Up Early</ion-label>
+    </ion-chip>
+    <ion-chip color="dark">
+      <ion-icon name="nuclear"></ion-icon>
+      <ion-label color="secondary">Washing Dishes</ion-label>
+    </ion-chip>
+    <ion-chip color="primary">
+      <ion-avatar>
+        <img src="https://i.boring.host/15ZFXWlB.jpg">
+      </ion-avatar>
+      <ion-label>Sleeping</ion-label>
+    </ion-chip>
+  </div>
+
+  <ion-button (click)="presentAlert()">Smash that like button</ion-button>
+</ion-content>
+
+
